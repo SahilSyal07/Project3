@@ -31,7 +31,7 @@
 		<simple>${in.headers[id]}</simple>		
 		</setHeader>
 		<log message="Request Sent to Public API at time_${date:now:yyyy-MM-dd'T'HH:mm:ss:SSS}"/>
-		<log message="URL_http://{{PublicAPI_URL}}/${header.ID}"/>
+		<log message="URL_http://{{PublicAPI_URL}}/${header.id}"/>
 		<setHeader headerName="CamelHttpMethod">
 		<simple>GET</simple>		
 		</setHeader>
