@@ -37,7 +37,7 @@
 		</setHeader>
 		<!-- Using Employee ID to extract data from Public API as a variable  -->
 		<to uri="restlet:http://{{PublicAPI_URL}}/{ID}"/>
-        <log message="Response Received from Public API_${body} at time_${date:now:yyyy-MM-dd'T'HH:mm:ss:SSS}"/>
+        <log message="Response Received from Public API_${body} at time_${date:now:yyyy-MM-dd'T'HH:mm:ss:SSS} with Status Code_${header.CamelHttpResponseCode} "/>
         </route>
     </camelContext>
 </blueprint>
